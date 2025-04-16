@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif; /* Font */
+    background-color: #f4f4f4; /* Background color */
+    color: #333; /* Text color */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center all text by default */
+}
+
+/* Centering the form and giving it a background */
+form {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #ffffff; /* Form background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light background for each fieldset */
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff; /* Color for the legend */
+}
+
+/* Styling the form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Styling the inputs and select dropdown */
+input[type="text"], input[type="email"], input[type="password"], select, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for Radio Buttons and Checkboxes */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Styling the submit button */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Spacing and alignment adjustments */
+section {
+    margin-bottom: 30px;
+}
+
+/* Use of ID selector for specific style */
+#profile-picture {
+    margin-top: 15px;
+}
+
+/* Class selector for custom styles (e.g., for warning or special fields) */
+.required-field {
+    background-color: #f8d7da; /* Light red background */
+    border-color: #f5c6cb;
+}
+
+/* Hover effect for inputs */
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover, select:hover {
+    border-color: #007bff; /* Blue border on hover */
+}
+
+/* Styling for the form's header */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Default - show navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
+  /* Responsive Rule: Hide navbar if screen width is less than 600px */
+  @media (max-width: 600px) {
+    .navbar {
+      display: none;
+    }
+  }
+  

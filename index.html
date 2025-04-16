@@ -53,6 +53,276 @@
         Learn code at <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
     </p>
 
+
+
+    <!-- Task 6: Tables -->
+    <h3>My Weekly Schedule</h3>
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Activity</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Study Web Development</td>
+            <td>9:00 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Exercise & Yoga</td>
+            <td>7:00 AM - 8:00 AM</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Practice Coding Projects</td>
+            <td>2:00 PM - 4:00 PM</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Read Books</td>
+            <td>6:00 PM - 7:30 PM</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Watch Tutorials</td>
+            <td>3:00 PM - 5:00 PM</td>
+        </tr>
+    </table>
+
+    <!-- Task 7: purpose of the `<head>`  -->
+    1a)The `
+
+    <head>` section contains meta-information about the web page, like its title, links to stylesheets, scripts, and
+        other data needed before displaying the content.
+
+        b)* Make your code more readable and organized.
+
+        * Help search engines understand your page structure (better SEO).
+
+        * Improve accessibility for screen readers and assistive tech.
+
+    <!-- Task 8: favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!-- Part 3 -->
+    <!-- Task 1: Form html -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Form</title>
+    </head>
+    <body>
+
+        <h1>Sign Up Form</h1>
+
+        <form action="#" method="POST">
+            <!-- Name Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <!-- Gender Radio Buttons -->
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+            </fieldset>
+            <br>
+
+            <!-- Interests Checkboxes -->
+            <fieldset>
+                <legend>Interests:</legend>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label><br>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label><br>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label><br>
+            </fieldset>
+            <br>
+
+            <!-- Country Dropdown -->
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+            </select>
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+    </html>
+
+
+    <!-- Task 2   fieldset & legend-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Form</title>
+    </head>
+    <body>
+
+        <h1>Sign Up Form</h1>
+
+        <form action="#" method="POST">
+            <!-- Name and Email Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+            </fieldset>
+
+            <!-- Password Section -->
+            <fieldset>
+                <legend>Password Information</legend>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <br><br>
+            </fieldset>
+
+            <!-- Gender Section -->
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+            </fieldset>
+            <br>
+
+            <!-- Interests Section -->
+            <fieldset>
+                <legend>Interests</legend>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label><br>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label><br>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label><br>
+            </fieldset>
+            <br>
+
+            <!-- Country Section -->
+            <fieldset>
+                <legend>Country</legend>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </fieldset>
+            <br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+    </html>
+
+
+    <!-- Task 3 Profile Picture Upload Section -->
+    <fieldset>
+        <legend>Profile Picture</legend>
+        <label for="profile_picture">Upload a profile picture:</label>
+        <input type="file" id="profile_picture" name="profile_picture" accept="image/*" required>
+    </fieldset>
+
+    <!-- Part 5 -->
+    <!-- Task 1  Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- task 2  Images Responsive-->
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+
+    <!-- Task3 Media Queries for Small Screens -->
+    /* Default styles for desktop */
+    body {
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Responsive adjustment for screens smaller than 768px */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+
+        body {
+            font-size: 16px;
+            margin: 10px;
+        }
+    }
+
+
+
+    <!-- Task 4  Hide/show a navbar -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Responsive Navbar</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    
+    <p>Welcome to my responsive site!</p>
+    
+    </body>
+    </html>
+
 </body>
 
 </html>
